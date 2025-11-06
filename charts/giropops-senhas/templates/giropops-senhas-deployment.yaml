@@ -1,0 +1,25 @@
+{{- range $component, $config := .Values.Deployments }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $component }}
+  labels:
+    {{- include "app.labels" $config | nindent 4 }}
+spec:
+  replicas: {{ $config.replicas | default 2 }}
+  selector:
+    matchLabels:
+      app: {{ $config.labels.app }}
+  template:
+    metadata:
+      labels:
+        {{- include "app.labels" $config | nindent 8 }}
+    spec:
+      containers:
+      - name: {{ $component }}
+        image: {{ $config.image.repository }}:{{ $config.image.tag }}
+        ports:
+        {{- include "app.ports" $config | nindent 10 }}
+        {{- include "app.resources" $config | nindent 8 }}
+        {{- end }}

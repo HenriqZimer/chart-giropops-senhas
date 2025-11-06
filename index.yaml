@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  giropops-senhas:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-11-06T23:54:21.449144394Z"
+    description: A Helm chart for deploying Giropops Senhas
+    digest: 0745f5aea392177dd00da40124d80d7c3cd797c6b0b8cfbf49e748c67163e647
+    name: giropops-senhas
+    sources:
+    - https://github.com/badtuxx/giropops-senhas
+    urls:
+    - https://github.com/HenriqZimer/chart-giropops-senhas/giropops-senhas-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-11-06T23:54:21.448175838Z"

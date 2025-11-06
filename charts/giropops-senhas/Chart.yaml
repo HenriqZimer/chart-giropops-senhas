@@ -1,0 +1,7 @@
+apiVersion: v2
+name: giropops-senhas
+description: A Helm chart for deploying Giropops Senhas
+version: 0.1.0
+appVersion: "1.0.0"
+sources:
+  - https://github.com/badtuxx/giropops-senhas
