@@ -10,6 +10,6 @@ entries:
     sources:
     - https://github.com/badtuxx/giropops-senhas
     urls:
-    - https://henriqzimer.github.io/chart-giropops-senhas/giropops-senhas-0.1.0.tgz
+    - https://henriqzimer.github.io/helm-chart-giropops-senhas/giropops-senhas-0.1.0.tgz
     version: 0.1.0
 generated: "2025-11-06T23:58:19.18971252Z"
